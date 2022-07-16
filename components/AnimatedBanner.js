@@ -1,7 +1,5 @@
 import styles from "../styles/components/AnimatedBanner.module.scss";
 
-const AnimatedBanner = () => {
+export default function AnimatedBanner() {
   return <div>AnimatedBanner</div>;
-};
-
-export default AnimatedBanner;
+}

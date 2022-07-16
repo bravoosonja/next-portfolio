@@ -1,0 +1,33 @@
+@use "../library" as *;
+
+.navbar {
+  width: fit-content;
+  height: 100vh;
+  width: 10%;
+  padding: 4rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 100px;
+
+  .navbarItems {
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    color: $dark-gray;
+    transform: rotate(-180deg);
+    font-size: 16px;
+    margin-bottom: 5rem;
+
+    &:hover {
+      color: $black;
+      text-decoration: line-through;
+      cursor: pointer;
+    }
+  }
+}

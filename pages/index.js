@@ -1,5 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/pages/Home.module.scss";
+import NudeLayout from "../components/layouts/NudeLayout";
+import Navbar from "../components/Navbar";
+import AnimatedBanner from "../components/AnimatedBanner";
 
 export default function Home() {
   return (
@@ -10,7 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>hello world</main>
+      <main>
+        <AnimatedBanner />
+      </main>
     </div>
   );
 }
+
+Home.getLayout = function getLayout(Home) {
+  return <NudeLayout>{Home}</NudeLayout>;
+};
