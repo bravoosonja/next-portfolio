@@ -1,1 +1,101 @@
 @use "../library" as *;
+
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 5rem;
+
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+
+    .content {
+      h1 {
+        font-family: "Armouk";
+        font-size: 10rem;
+
+        &:hover {
+        }
+      }
+
+      p {
+        font-family: "Mier";
+        font-size: 22px;
+        font-style: italic;
+        line-height: 2;
+      }
+
+      .email {
+        font-family: "Mier";
+        font-size: 22px;
+        width: max-content;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        height: 8vh;
+      }
+
+      .underline {
+        background-image: linear-gradient(
+          90deg,
+          hsla(208, 67%, 81%, 1) 0%,
+          hsla(37, 65%, 85%, 1) 50%,
+          hsla(301, 65%, 83%, 1) 100%
+        );
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        background-position: 0 88%;
+        transition: background-size 0.2s ease-in;
+
+        &:hover {
+          background-size: 100% 88%;
+          padding: 0.3rem;
+          color: $black;
+        }
+      }
+
+      .copyText {
+        position: static;
+        top: 0;
+        color: $nude;
+        font-size: 14px;
+        margin-top: 1rem;
+
+        &:hover {
+          opacity: 1;
+          //   top: -30px;
+          //   left: 0;
+          width: 100%;
+          height: 275%;
+
+          &:after {
+            content: "Copied!";
+          }
+        }
+      }
+
+      .links {
+        margin-top: 1rem;
+        a {
+          font-size: 22px;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+  }
+}

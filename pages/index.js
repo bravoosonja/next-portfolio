@@ -3,6 +3,7 @@ import styles from "../styles/pages/Home.module.scss";
 import NudeLayout from "../components/layouts/NudeLayout";
 import Navbar from "../components/Navbar";
 import AnimatedBannerText from "../components/AnimatedBannerText";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,9 +23,21 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.rightContainer}>
-            <h1>Projects</h1>
-            <h1>About</h1>
-            <h1>Contact</h1>
+            <Link href="/projects">
+              <a>
+                <h1>Projects</h1>
+              </a>
+            </Link>
+            <Link href="/about">
+              <a>
+                <h1>About</h1>
+              </a>
+            </Link>
+            <Link href="/contact">
+              <a>
+                <h1>Contact</h1>
+              </a>
+            </Link>
           </div>
         </div>
       </main>
