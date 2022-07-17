@@ -1,4 +1,4 @@
-import styles from "../styles/pages/About.module.scss";
+import styles from "../styles/pages/About.module.css";
 import NudeLayout from "../components/layouts/NudeLayout";
 
 export default function About() {

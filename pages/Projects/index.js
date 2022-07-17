@@ -1,4 +1,4 @@
-import styles from "../../styles/pages/Projects.module.scss";
+import styles from "../../styles/pages/Projects.module.css";
 import BlackLayout from "../../components/layouts/BlackLayout";
 
 export default function Projects() {

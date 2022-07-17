@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/pages/Contact.module.scss";
+import styles from "../styles/pages/Contact.module.css";
 import BlackLayout from "../components/layouts/BlackLayout";
 
 export default function Contact() {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/components/AnimatedBannerText.module.scss";
+import styles from "../styles/components/AnimatedBannerText.module.css";
 
 export default function AnimatedBannerText({ textToAnimate }) {
   const text = textToAnimate;

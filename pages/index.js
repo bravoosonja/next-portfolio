@@ -1,9 +1,9 @@
 import Head from "next/head";
-import styles from "../styles/pages/Home.module.scss";
+import styles from "../styles/pages/Home.module.css";
 import NudeLayout from "../components/layouts/NudeLayout";
 import Navbar from "../components/Navbar";
-import AnimatedBannerText from "../components/AnimatedBannerText";
 import Link from "next/link";
+import { menuItems } from "../utils/data";
 
 export default function Home() {
   return (
@@ -19,7 +19,12 @@ export default function Home() {
           <div className={styles.leftContainer}>
             <div className={styles.content}>
               <h1>Songna Choi </h1>
-              <p>I enjoy developing aesthetic and fun user experience.</p>
+              <p className={styles.subText}>
+                Pronounced as <span>Song-nah</span>
+              </p>
+              <p className={styles.para}>
+                I enjoy developing aesthetic and fun user experience.
+              </p>
             </div>
           </div>
           <div className={styles.rightContainer}>

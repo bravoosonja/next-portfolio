@@ -8,6 +8,13 @@
   src: url("../assets/fonts/Armouk.woff2") format("woff2");
 }
 
+:root {
+  --nude: #eee7e1;
+  --black: #1a1919;
+  --light-gray: hsla(0, 1%, 14%, 0.473);
+  --dark-gray: hsla(0, 0%, 23%, 0.568);
+}
+
 html,
 body {
   padding: 0;

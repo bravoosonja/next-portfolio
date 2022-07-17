@@ -1,9 +1,7 @@
-@use "../library" as *;
-
 .container {
   padding: 0 2rem;
-  background-color: $nude;
-  color: $black;
+  background-color: var(--black);
+  color: var(--nude);
 }
 
 .main {
