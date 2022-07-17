@@ -30,3 +30,17 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--nude);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
