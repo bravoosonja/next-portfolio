@@ -5,7 +5,7 @@ import styles from "../styles/components/Navbar.module.css";
 import { menuItems } from "../utils/data";
 
 export default function Navbar() {
-  const [isSelected, setIsSelected] = useState(false);
+  const router = useRouter();
 
   return (
     <nav>
@@ -15,8 +15,7 @@ export default function Navbar() {
             <Link href={item.path}>
               <a
                 key={index}
-                onClick={() => setIsSelected(item.index)}
-                isSelected={isSelected === item.index}
+                className={router.pathname === item.path ? styles.active : ""}
               >
                 {item.name}
               </a>

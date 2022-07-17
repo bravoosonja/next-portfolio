@@ -64,15 +64,15 @@
   font-size: 14px;
   margin-top: 1rem;
 }
-.copyText:hover {
+.copyText::hover {
   opacity: 1;
   width: 100%;
   height: 275%;
 }
 
-.copyText:after {
+/* .copyText::after {
   content: "Copied!";
-}
+} */
 
 .links {
   margin-top: 1rem;

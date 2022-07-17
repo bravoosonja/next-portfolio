@@ -15,7 +15,6 @@
   text-transform: uppercase;
   writing-mode: vertical-rl;
   text-orientation: sideways;
-  color: var(--dark-gray);
   transform: rotate(180deg);
   font-size: 16px;
 }
@@ -28,10 +27,8 @@
 .navbarItems:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: var(--black);
 }
 
 .selected a {
   text-decoration: line-through;
-  color: var(--black);
 }

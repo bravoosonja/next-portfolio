@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 5rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .leftContainer {
