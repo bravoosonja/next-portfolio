@@ -20,22 +20,20 @@ export default function Projects() {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <div className={styles.projectItems}>
-          {projectItems.map((item) => (
-            <>
-              <Link href={"/projects/" + item.id} key={item.id}>
-                <h1 key={item.id}>
-                  <a>{item.name}</a>
-                </h1>
-              </Link>
+        {projectItems.map((item) => (
+          <div className={styles.projectItems} key={item.id}>
+            <Link href={"/projects/" + item.id} key={item.id}>
+              <a key={item.id}>
+                <h1>{item.name}</h1>
+              </a>
+            </Link>
+            <div className={styles.keywords}>
               {item.keywords.map((keyword, index) => (
-                <p key={index} className={styles.keyword}>
-                  {keyword}
-                </p>
+                <p key={index}>{keyword}</p>
               ))}
-            </>
-          ))}
-        </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
