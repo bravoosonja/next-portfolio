@@ -25,7 +25,7 @@
   margin-bottom: 5rem;
 }
 
-.navbarItems:hover {
+.navbarItems a:hover {
   text-decoration: underline;
   cursor: pointer;
 }

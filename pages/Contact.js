@@ -42,10 +42,18 @@ export default function Contact() {
             </motion.span>
           </div>
           <div className={styles.links}>
-            <a target="_blank" href="https://github.com/bravoosonja">
+            <a
+              target="_blank"
+              href="https://github.com/bravoosonja"
+              rel="noreferrer"
+            >
               github
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/songna-c">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/songna-c"
+              rel="noreferrer"
+            >
               linkedin
             </a>
           </div>

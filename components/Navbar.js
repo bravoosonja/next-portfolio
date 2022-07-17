@@ -1,24 +1,17 @@
-import { useState } from "react";
+//TODO: Strike-through for active item
+
 import Link from "next/link";
-import { useRouter } from "next/router";
 import styles from "../styles/components/Navbar.module.css";
 import { menuItems } from "../utils/data";
 
 export default function Navbar() {
-  const router = useRouter();
-
   return (
     <nav>
       <div className={styles.navbar}>
         {menuItems.map((item, index) => (
-          <div className={styles.navbarItems}>
+          <div className={styles.navbarItems} key={index}>
             <Link href={item.path}>
-              <a
-                key={index}
-                className={router.pathname === item.path ? styles.active : ""}
-              >
-                {item.name}
-              </a>
+              <a key={index}>{item.name}</a>
             </Link>
           </div>
         ))}

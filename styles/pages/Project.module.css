@@ -1,5 +1,98 @@
 .title {
   font-family: "Armouk";
   font-size: 12rem;
-  height: 90vh;
+  height: 60vh;
+  color: var(--nude);
+  background-color: var(--black);
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.summary {
+  width: 60vw;
+  height: 100%;
+  padding: 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.summary h2 {
+  font-family: "Armouk";
+  font-size: 4rem;
+  line-height: 1.13;
+}
+
+.grid {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 5rem;
+  max-width: 80vw;
+  height: fit-content;
+}
+
+.techStack,
+.demoLinks {
+  font-family: "Mier";
+}
+
+.techStack > ul,
+.demoLinks > ul,
+.technique > ul {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.techStack > li,
+.demoLinks > li,
+.technique > li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.demoLinks a {
+  text-decoration: underline;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 10rem;
+}
+
+.imageContainer {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.features {
+  position: relative;
+  padding: 5rem;
+}
+
+.features > h2 {
+  position: absolute;
+  top: 100px;
+  left: -160px;
+  font-family: "Armouk";
+  font-size: 4rem;
+}
+
+.features > p {
+  font-size: 1.2rem;
 }
