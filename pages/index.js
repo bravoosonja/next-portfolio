@@ -23,7 +23,10 @@ export default function Home() {
                 Pronounced as <span>Song-nah</span>
               </p>
               <p className={styles.para}>
-                I enjoy developing aesthetic and fun user experience.
+                I enjoy developing aesthetic and fun user experience. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Porro
+                reprehenderit laborum ad assumenda ratione harum, quos magni vel
+                at dolores.
               </p>
             </div>
           </div>

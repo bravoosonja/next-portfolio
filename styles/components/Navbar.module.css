@@ -1,7 +1,8 @@
 .navbar {
   width: min-content;
   height: 100vh;
-  width: 10%;
+  width: 5%;
+  padding: 4rem 2rem;
   display: flex;
   flex: 1;
   flex-direction: column;

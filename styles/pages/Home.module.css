@@ -12,11 +12,13 @@
   align-items: flex-start;
   height: 100%;
   width: 25vw;
+  text-overflow: word-wrap;
 }
 
 .content {
   position: absolute;
-  bottom: 180px;
+  bottom: 145px;
+  width: 25vw;
 }
 
 .content h1 {
@@ -31,12 +33,9 @@
   display: block;
 }
 
-.subText {
-  color: var(--dark-gray);
-}
-
 .subText span {
   font-style: italic;
+  color: var(--dark-gray);
 }
 
 .para {
@@ -53,5 +52,6 @@
 
 .rightContainer h1 {
   font-family: "Armouk";
-  font-size: 10rem;
+  font-size: 14rem;
+  line-height: 1.13;
 }
