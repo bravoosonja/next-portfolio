@@ -17,17 +17,30 @@
 
   .navbarItems {
     text-transform: uppercase;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
     text-orientation: sideways;
     color: $dark-gray;
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
     font-size: 16px;
     margin-bottom: 5rem;
 
-    &:hover {
-      color: $black;
-      text-decoration: line-through;
-      cursor: pointer;
+    a {
+      font-size: 16px;
+      margin-bottom: 5rem;
+
+      &:hover,
+      &:active {
+        color: $black;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      &:active {
+        text-decoration: line-through;
+      }
     }
   }
 }

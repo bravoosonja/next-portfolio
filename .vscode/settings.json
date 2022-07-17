@@ -1,3 +1,6 @@
 {
-  "cSpell.words": ["Armouk"]
+  "cSpell.words": ["Armouk"],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true
 }
