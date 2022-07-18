@@ -86,6 +86,9 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   margin: 2rem;
+  width: 1920;
+  height: 929;
+  object-fit: cover;
 }
 
 .features {
@@ -112,7 +115,7 @@
 }
 
 .noteToSelf {
-  outline: 2px solid var(--black);
+  /* outline: 2px solid var(--black); */
   width: 85%;
   padding: 2rem;
   display: flex;

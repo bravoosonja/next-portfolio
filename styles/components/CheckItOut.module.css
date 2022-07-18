@@ -1,0 +1,56 @@
+.checkItOut {
+  margin-top: 3rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  height: 50vh;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--nude);
+}
+
+.checkItOut h1 {
+  font-family: "Armouk";
+  font-size: 5rem;
+}
+
+.linksContainer {
+  font-family: "Mier";
+  font-size: 2rem;
+  color: var(--nude);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.githubLink::before,
+.liveLink::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+.githubLink:hover::before,
+.liveLink:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+.githubLink,
+.liveLink {
+  letter-spacing: 1px;
+  text-indent: 1px;
+  display: inline-block;
+  margin-right: 2rem;
+  transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+.githubLink:hover,
+.liveLink:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  text-decoration: line-through;
+}

@@ -1,6 +1,7 @@
 import styles from "../../styles/pages/Project.module.css";
 import NudeLayout from "../../components/layouts/NudeLayout";
 import Image from "next/image";
+import CheckItOut from "../../components/CheckItOut";
 
 export default function LiveChat() {
   return (
@@ -66,7 +67,9 @@ export default function LiveChat() {
           <h2>Features</h2>
           <p>Signup / Login for authentication</p>
           <p>Real-time chat</p>
-          <p>Automatically sets the them mode to user's theme preference</p>
+          <p>
+            Automatically sets the them mode to user&apos;s theme preference
+          </p>
           <p>Toggle light/theme mode</p>
           <p>Timestamp for messages</p>
         </div>
@@ -155,6 +158,10 @@ export default function LiveChat() {
             <li>Then maybe Svelte</li>
           </ol>
         </div>
+        <CheckItOut
+          githubLink={"https://github.com/bravoosonja/live-chat"}
+          liveLink={"https://vue-firebase-4dc0a.web.app/"}
+        />
       </div>
     </div>
   );
