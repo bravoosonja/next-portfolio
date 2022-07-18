@@ -33,11 +33,7 @@ export default function Projects() {
           <h1>Projects</h1>
           <p>
             This is a showcase of my selected web development projects from
-            Vanilla JavaScript to React and Vue.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempora
-            praesentium beatae voluptatibus corrupti, necessitatibus
+            vanilla JavaScript to React and Vue.
           </p>
         </div>
       </div>

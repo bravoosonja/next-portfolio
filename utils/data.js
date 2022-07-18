@@ -26,7 +26,7 @@ export const projectItems = [
   // },
   {
     name: "Live Chat",
-    keywords: ["Vue3", "Firebase", "Vite"],
+    keywords: ["Vue3", "Vite", "Firebase"],
     id: "live-chat",
     image: "/images/floating-images/live-chat.png",
   },

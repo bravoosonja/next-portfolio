@@ -23,7 +23,7 @@ export default function LiveChat() {
             <li>CSS</li>
           </div>
           <div className={styles.technique}>
-            <ul>Technique/Skills</ul>
+            <ul>Technique</ul>
             <li>Vue Composition API</li>
             <li>Vue Route guard</li>
             <li>Firestore database</li>
@@ -158,11 +158,11 @@ export default function LiveChat() {
             <li>Then maybe Svelte</li>
           </ol>
         </div>
-        <CheckItOut
-          githubLink={"https://github.com/bravoosonja/live-chat"}
-          liveLink={"https://vue-firebase-4dc0a.web.app/"}
-        />
       </div>
+      <CheckItOut
+        githubLink={"https://github.com/bravoosonja/live-chat"}
+        liveLink={"https://vue-firebase-4dc0a.web.app/"}
+      />
     </div>
   );
 }
