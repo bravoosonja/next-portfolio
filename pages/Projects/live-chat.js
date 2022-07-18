@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function LiveChat() {
   return (
-    <>
+    <div className={styles.main}>
       <div className={styles.title}>
         <h1>Live Chat</h1>
       </div>
@@ -70,8 +70,93 @@ export default function LiveChat() {
           <p>Toggle light/theme mode</p>
           <p>Timestamp for messages</p>
         </div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={"/images/live-chat/dark-login.png"}
+            alt="dark-login"
+            width={1920}
+            height={929}
+          />
+        </div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={"/images/live-chat/dark-chat.png"}
+            alt="dark-login"
+            width={1920}
+            height={929}
+          />
+        </div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={"/images/live-chat/light-login.png"}
+            alt="dark-login"
+            width={1920}
+            height={929}
+          />
+        </div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={"/images/live-chat/light-chat.png"}
+            alt="dark-login"
+            width={1920}
+            height={929}
+          />
+        </div>
+        <div className={styles.description}>
+          <p>
+            As this is my first project done with Vue as well as Firebase, there
+            were many silly challenges involved in developing this project like
+            following Firebase 8 documentation and realizing I was using
+            Firebase 9, and mixing up the syntax for Composition API and Options
+            API in Vue <code>script setup</code>, to name a few.
+          </p>
+          <br />
+          <p>
+            As someone who started her front-end developer journey not long ago,
+            I would go back to the code I wrote to check or refactor more often
+            than I would like. In that sense, Vue’s single-file component
+            structure saved a lot of time going back and forth between folder
+            structures within vscode, and the componentized structure within the
+            file helped me analyse the code faster.
+          </p>
+          <br />
+          <p>
+            Though Next JS supports out-of-the-box support for CSS modules, I
+            found the extra typing involved was tedious
+          </p>
+          <br />
+          <p>
+            <code>{`<div className={styles.container} />`}</code> as opposed to
+            Emmet abbreviation <code>.container</code>.
+          </p>
+          <br />
+          <p>
+            Installing an extension on vscode could probably save me from extra
+            typing involved with styling with CSS modules, but Vue’s way of
+            scoping style was pleasant to work with. Incorporating the dark mode
+            was as effortless as using React and Styled-components by using{" "}
+            <code>usedark</code> from VueUse.
+          </p>
+          <br />
+          <p>
+            Though React and Vue are of different flavours, I can’t help but
+            recall the moment when I first learned to use React. Coming from
+            vanilla JavaScript, React felt like a whole new world not having to
+            type <code>document.</code> so many times and I was enchanted by the
+            new way of manipulating DOM. Perhaps I’m in the honeymoon phase with
+            Vue, but I cannot wait to learn more about the way of Vue.
+          </p>
+        </div>
+        <div className={styles.noteToSelf}>
+          <h3>Note to self</h3>
+          <ol>
+            <li>Learning new framework is fun but</li>
+            <li>Master React, and Vue first</li>
+            <li>Then maybe Svelte</li>
+          </ol>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
