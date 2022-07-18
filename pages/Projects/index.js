@@ -7,37 +7,39 @@ import { projectItems } from "../../utils/data";
 import Link from "next/link";
 import Image from "next/image";
 
-function FloatingImage({ image, active, key }) {
-  return (
-    <div key={key}>
-      <Image
-        className={`${styles.active} ${styles.isActive}`}
-        src={image}
-        alt="floating project"
-        width={400}
-        heigh={300}
-      />
-      ;
-    </div>
-  );
-}
+// function FloatingImage({ image, active, key }) {
+//   return (
+//     <div key={key}>
+//       <Image
+//         className={`${styles.active} ${styles.isActive}`}
+//         src={image}
+//         alt="floating project"
+//         width={400}
+//         heigh={300}
+//       />
+//       ;
+//     </div>
+//   );
+// }
 
 export default function Projects() {
   // floating image
   const [activeId, setActiveId] = useState(null);
 
   return (
-    <div className={styles.projects}>
-      <div className={styles.leftContainer}>
-        <div className={styles.content}>
-          <h1>Projects</h1>
-          <p>
+    <div className="grid">
+      <div className="leftContainer">
+        <div className="leftContent">
+          <p className="leftTitle">Projects</p>
+          <p className="leftContentText">
             This is a showcase of my selected web development projects from
-            vanilla JavaScript to React and Vue.
+            vanilla JavaScript to React and Vue. This is a showcase of my
+            selected web development projects from vanilla JavaScript to React
+            and Vue.
           </p>
         </div>
       </div>
-      <div className={styles.rightContainer}>
+      <div className="rightContainer">
         {projectItems.map((item) => (
           <div
             className={styles.projectItems}

@@ -15,41 +15,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div className="grid">
-          <div className="leftContainer">
-            <div className="content">
-              <p className="name">Songna Choi </p>
-              <p className="subText">
-                Pronounced as <span>Song-nah</span>
-              </p>
-              <p className="para">
-                I enjoy developing aesthetic and fun user experience. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Porro
-                reprehenderit laborum ad assumenda ratione harum, quos magni vel
-                at dolores.
-              </p>
-            </div>
-          </div>
-          <div className="rightContainer">
-            <Link href="/projects">
-              <a>
-                <h1>Projects</h1>
-              </a>
-            </Link>
-            <Link href="/about">
-              <a>
-                <h1>About</h1>
-              </a>
-            </Link>
-            <Link href="/contact">
-              <a>
-                <h1>Contact</h1>
-              </a>
-            </Link>
+      <div className="grid">
+        <div className="leftContainer">
+          <div className="leftContent">
+            <p className="leftTitle">Songna Choi </p>
+            <p className="subText">
+              Pronounced as <span>Song-nah</span>
+            </p>
+            <p className="leftContentText">
+              I enjoy developing aesthetic and fun user experience. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Porro reprehenderit
+              laborum ad
+            </p>
           </div>
         </div>
-      </main>
+        <div className="rightContainer">
+          <Link href="/projects">
+            <a>
+              <h1 className="rightContainerTitle">Projects</h1>
+            </a>
+          </Link>
+          <Link href="/about">
+            <a>
+              <h1 className="rightContainerTitle">About</h1>
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a>
+              <h1 className="rightContainerTitle">Contact</h1>
+            </a>
+          </Link>
+        </div>
+      </div>
     </>
   );
 }

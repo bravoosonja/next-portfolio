@@ -1,45 +1,3 @@
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10rem;
-  min-height: 100vh;
-}
-
-.leftContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* height: 100%; */
-}
-
-.content {
-  position: sticky;
-  bottom: 145px;
-  width: 20vw;
-}
-
-.content h1 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 700;
-  display: block;
-}
-
-.content p {
-  font-size: 18px;
-  display: block;
-  margin-top: 1rem;
-}
-
-.rightContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  /* height: 100vh; */
-}
-
 .projectItems {
   display: flex;
   justify-content: flex-start;
@@ -51,7 +9,7 @@
 
 .projectTitle {
   font-family: "Armouk";
-  font-size: 7rem;
+  font-size: 9rem;
   line-height: 1.2;
   color: var(--nude);
   transition: opacity 0.35s cubic-bezier(0.77, 0, 0.175, 1);
