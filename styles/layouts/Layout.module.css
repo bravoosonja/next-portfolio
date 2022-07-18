@@ -4,6 +4,16 @@
   color: var(--black);
 }
 
+.nude {
+  background-color: var(--nude);
+  color: var(--black);
+}
+
+.black {
+  background-color: var(--black);
+  color: var(--nude);
+}
+
 .main {
   min-height: 100vh;
   max-width: 100%;

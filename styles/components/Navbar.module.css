@@ -17,19 +17,4 @@
   writing-mode: vertical-rl;
   text-orientation: sideways;
   transform: rotate(180deg);
-  font-size: 16px;
-}
-
-.navbarItems a {
-  font-size: 16px;
-  margin-bottom: 5rem;
-}
-
-.navbarItems a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.selected a {
-  text-decoration: line-through;
 }

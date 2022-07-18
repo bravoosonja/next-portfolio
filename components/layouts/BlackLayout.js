@@ -1,11 +1,11 @@
-import styles from "../../styles/layouts/BlackLayout.module.css";
+import styles from "../../styles/layouts/Layout.module.css";
 import Navbar from "../Navbar";
 
 export default function BlackLayout({ children }) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.black}`}>
       <nav>
-        <Navbar className={styles.blackNav} />
+        <Navbar />
       </nav>
       <div className={styles.main}>
         <main>{children}</main>

@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import "../styles/_reset.css";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);

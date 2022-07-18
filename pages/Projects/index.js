@@ -58,7 +58,7 @@ export default function Projects() {
           </div>
         ))}
 
-        <div className={styles.projectMedia}>
+        {/* <div className={styles.projectMedia}>
           {projectItems.map((image) => {
             const isActive = image === activeId;
             <FloatingImage
@@ -67,7 +67,7 @@ export default function Projects() {
               key={image.id}
             />;
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

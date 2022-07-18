@@ -15,11 +15,24 @@
   --dark-gray: hsla(0, 0%, 23%, 0.568);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Armouk";
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Mier", "Armouk", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 code {
@@ -30,6 +43,60 @@ code {
   font-size: 1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+a,
+button {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+  margin: 0;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -44,4 +111,90 @@ code {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  max-height: 100%;
+}
+
+.container {
+  padding: 0 2rem;
+  background-color: var(--nude);
+  color: var(--black);
+}
+
+.main {
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  max-height: 100%;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-height: 100%;
+  max-width: 25vw;
+  text-overflow: word-wrap;
+}
+
+.content {
+  position: absolute;
+  bottom: 9rem;
+  max-width: 25vw;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+
+.content p {
+  font-size: 1.1rem;
+  display: block;
+}
+
+.subText span {
+  font-style: italic;
+  color: var(--dark-gray);
+}
+
+.para {
+  margin-top: 1rem;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rightContainer h1 {
+  font-size: 14rem;
+  line-height: 1.13;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }

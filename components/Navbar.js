@@ -1,20 +1,19 @@
-//TODO: Strike-through for active item
-
-import Link from "next/link";
 import styles from "../styles/components/Navbar.module.css";
-import { menuItems } from "../utils/data";
+import ActiveLink from "./ActiveLink";
 
 export default function Navbar() {
   return (
     <nav>
       <div className={styles.navbar}>
-        {menuItems.map((item, index) => (
-          <div className={styles.navbarItems} key={index}>
-            <Link href={item.path}>
-              <a key={index}>{item.name}</a>
-            </Link>
-          </div>
-        ))}
+        <div className={styles.navbarItems}>
+          <ActiveLink href="/contact">Contact</ActiveLink>
+
+          <ActiveLink href="/projects">Projects</ActiveLink>
+
+          <ActiveLink href="/about">About</ActiveLink>
+
+          <ActiveLink href="/">Home</ActiveLink>
+        </div>
       </div>
     </nav>
   );

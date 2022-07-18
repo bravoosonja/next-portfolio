@@ -1,4 +1,4 @@
-import styles from "../../styles/layouts/NudeLayout.module.css";
+import styles from "../../styles/layouts/Layout.module.css";
 import Navbar from "../Navbar";
 
 export default function NudeLayout({ children }) {
