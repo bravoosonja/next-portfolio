@@ -2,6 +2,7 @@ import styles from "../../styles/pages/Project.module.css";
 import NudeLayout from "../../components/layouts/NudeLayout";
 import Image from "next/image";
 import CheckItOut from "../../components/CheckItOut";
+import { projectItems, liveChatImages } from "../../utils/data";
 
 export default function LiveChat() {
   return (
@@ -73,38 +74,12 @@ export default function LiveChat() {
           <p>Toggle light/theme mode</p>
           <p>Timestamp for messages</p>
         </div>
-        <div className={styles.imageContainer}>
-          <Image
-            src={"/images/live-chat/dark-login.png"}
-            alt="dark-login"
-            width={1920}
-            height={929}
-          />
-        </div>
-        <div className={styles.imageContainer}>
-          <Image
-            src={"/images/live-chat/dark-chat.png"}
-            alt="dark-login"
-            width={1920}
-            height={929}
-          />
-        </div>
-        <div className={styles.imageContainer}>
-          <Image
-            src={"/images/live-chat/light-login.png"}
-            alt="dark-login"
-            width={1920}
-            height={929}
-          />
-        </div>
-        <div className={styles.imageContainer}>
-          <Image
-            src={"/images/live-chat/light-chat.png"}
-            alt="dark-login"
-            width={1920}
-            height={929}
-          />
-        </div>
+
+        {liveChatImages.map((item, index) => (
+          <div className={styles.imageContainer} key={index}>
+            <Image src={item.src} alt={item.alt} width={1920} height={929} />
+          </div>
+        ))}
         <div className={styles.description}>
           <p>
             As this is my first project done with Vue as well as Firebase, there
