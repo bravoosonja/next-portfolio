@@ -1,0 +1,32 @@
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* outline: 1px solid red; */
+  padding: 5rem;
+}
+
+.aboutTitle {
+  font-family: "Armouk";
+  font-size: 15rem;
+  line-height: 1;
+}
+
+.quote {
+  font-family: "Armouk";
+  font-size: 2.5rem;
+  max-width: fit-content;
+  position: static;
+  padding: 2rem;
+  /* position: absolute; */
+  /* bottom: 10rem;
+  left: 20rem; */
+}
+
+.content {
+  max-width: 40vw;
+  font-size: 20px;
+  position: relative;
+}

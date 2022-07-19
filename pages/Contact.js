@@ -11,8 +11,8 @@ export default function Contact() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className={styles.contact}>
-      <div className={styles.leftContainer}>
+    <div className="grid">
+      <div className="leftContainer">
         <div className={styles.content}>
           <h1>Contact</h1>
           <div className={styles.email}>
@@ -59,7 +59,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className={styles.rightContainer}></div>
+      <div className="rightContainer"></div>
     </div>
   );
 }
