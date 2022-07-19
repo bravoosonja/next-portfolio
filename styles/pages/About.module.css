@@ -1,11 +1,14 @@
-.aboutGrid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+.about {
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  /* outline: 1px solid red; */
   padding: 5rem;
+  max-width: 100%;
+}
+
+.content {
+  font-size: 20px;
+  max-width: 50vw;
 }
 
 .aboutTitle {
@@ -16,17 +19,18 @@
 
 .quote {
   font-family: "Armouk";
-  font-size: 2.5rem;
-  max-width: fit-content;
-  position: static;
+  font-size: 3.5rem;
+  max-width: 60vw;
   padding: 2rem;
-  /* position: absolute; */
-  /* bottom: 10rem;
-  left: 20rem; */
 }
 
-.content {
-  max-width: 40vw;
-  font-size: 20px;
-  position: relative;
+.text {
+  max-width: 35vw;
+}
+
+.sectionTitle {
+  font-family: "Armouk";
+  font-size: 3.5rem;
+  padding: 3rem 0;
+  text-transform: uppercase;
 }
