@@ -30,7 +30,26 @@
 
 .sectionTitle {
   font-family: "Armouk";
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding: 3rem 0;
   text-transform: uppercase;
 }
+
+.skillsContainer {
+  background-color: var(--black);
+  color: var(--nude);
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.skillsContainer h3 {
+  font-size: 2rem;
+  max-width: 100%;
+}
+
+/* .skillsGrid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+} */

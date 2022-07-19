@@ -1,6 +1,7 @@
 import styles from "../styles/pages/About.module.css";
 import NudeLayout from "../components/layouts/NudeLayout";
 import Button from "../components/Button";
+import Accordion from "../components/Accordion";
 
 export default function About() {
   return (
@@ -16,28 +17,28 @@ export default function About() {
           </div>
         </section>
         <section className={styles.text}>
-          <p>
+          <p className="para">
             A lifetime ago, I was living in South Korea where I worked as a
             fashion model agent for over seven years.
           </p>
-          <p>
+          <p className="para">
             Somewhere along those years, my daily exposure to high-fashion
             trends awoke my innate yearning for aesthetic values, and a new zeal
             to conquer intellectual challenges.
           </p>
-          <p>
+          <p className="para">
             Seeking worthy battles to triumph over, I embarked on a plane to
             Australia where I became a lifelong student of problem-solving. From
             network security to IT service management and delivery, I enlisted
             myself in a variety of crusades.
           </p>
-          <p>
+          <p className="para">
             When my lust for visual pleasure and my desire for satisfaction in
             solving a problem could not seem to be satiated at the same time is
             when I was introduced to the fulfilling world of front-end
             development, harmonious marriage between my two passions.
           </p>
-          <p>
+          <p className="para">
             Eager to finally quench my thirst in one go, I have been voraciously
             feeding knowledge with hands-on projects from vanilla JavaScript to
             React, and now Vue, dreaming of one day, I will achieve the glorious
@@ -46,11 +47,24 @@ export default function About() {
         </section>
         <section>
           <h2 className={styles.sectionTitle}>Skills</h2>
-          <div className={styles.skillsContainer}>
-            <h3>React</h3>
-            <p>This Website</p>
-            <p>Shopping Cart</p>
-          </div>
+          <p className="para">Projects by web development technologies</p>
+          <Accordion />
+          {/* <div className={styles.skillsContainer}>
+            <div className={styles.skillsGrid}>
+              <div>
+                <h3>React</h3>
+                <p>This Website</p>
+                <p>Movie App</p>
+                <p>Shopping Cart</p>
+              </div>
+              <div>
+                <h3>Vue</h3>
+                <p>Live Chat</p>
+              </div>
+              <h3>JavaScript</h3>
+              <p></p>
+            </div>
+          </div> */}
         </section>
         <section>
           <h2 className={styles.sectionTitle}>Experience</h2>
