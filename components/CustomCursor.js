@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import styles from "../styles/components/CustomCursor.module.css";
 
 const CustomCursor = () => {
-  const delay = 8;
+  const delay = 7;
 
   const isCursorVisible = useRef(true);
   const isCursorEnlarged = useRef(false);
