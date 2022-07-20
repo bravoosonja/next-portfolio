@@ -6,73 +6,81 @@ import UpArrow from "../assets/icons/up-arrow.png";
 
 export default function Accordion() {
   const [isActive, setIsActive] = useState(false);
+
   return (
-    <div className={styles.container}>
-      <div
-        className={styles.accordionItem}
-        id="react"
-        onClick={() => setIsActive(!isActive)}
-      >
-        <div className={styles.accordionTitle}>
-          {/* <div className={styles.flex}> */}
-          <h3>React</h3>
+    <div className={styles.accordion}>
+      <div className={styles.item}>
+        <div className={styles.title} onClick={() => setIsActive(!isActive)}>
+          <h3 className={styles.titleHeading}>React</h3>
           {isActive ? (
             <Image src={UpArrow} alt="up arrow" />
           ) : (
             <Image src={DownArrow} alt="down arrow" />
           )}
-          {/* </div> */}
         </div>
         {isActive && (
-          <div className={styles.answer}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum.
-            </p>
+          <div className={styles.content}>
+            <div className={styles.keywords}>
+              <li>Next JS</li>
+              <li>Styled-components</li>
+            </div>
+            <div className={styles.links}>
+              <p>This Website</p>
+              <p>Shopping Cart</p>
+              <p>Movie App</p>
+            </div>
           </div>
         )}
-
         <hr />
       </div>
 
-      <div className={styles.accordionItem} id="vue">
-        <a className={styles.accordionTitle} href="#vue">
-          <div className={styles.flex}>
-            <h3>Vue</h3>
-          </div>
-          {/* <Image src={Arrow} alt="arrow" /> */}
-        </a>
-        <div className={styles.answer}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum.
-          </p>
+      <div className={styles.item}>
+        <div className={styles.title} onClick={() => setIsActive(!isActive)}>
+          <h3 className={styles.titleHeading}>Vue</h3>
+          {isActive ? (
+            <Image src={UpArrow} alt="up arrow" />
+          ) : (
+            <Image src={DownArrow} alt="down arrow" />
+          )}
         </div>
+        {isActive && (
+          <div className={styles.content}>
+            <div className={styles.keywords}>
+              <li>Next JS</li>
+              <li>Styled-components</li>
+            </div>
+            <div className={styles.links}>
+              <p>This Website</p>
+              <p>Shopping Cart</p>
+              <p>Movie App</p>
+            </div>
+          </div>
+        )}
         <hr />
       </div>
 
-      <div className={styles.accordionItem} id="question3">
-        <a className={styles.accordionTitle} href="#question3">
-          <div className={styles.flex}>
-            <h3>JavaScript</h3>
-          </div>
-          {/* <Image src={Arrow} alt="arrow" /> */}
-        </a>
-        <div className={styles.answer}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum.
-          </p>
+      <div className={styles.item}>
+        <div className={styles.title} onClick={() => setIsActive(!isActive)}>
+          <h3 className={styles.titleHeading}>JavaScript</h3>
+          {isActive ? (
+            <Image src={UpArrow} alt="up arrow" />
+          ) : (
+            <Image src={DownArrow} alt="down arrow" />
+          )}
         </div>
+        {isActive && (
+          <div className={styles.content}>
+            <div className={styles.keywords}>
+              <li>Next JS</li>
+              <li>Styled-components</li>
+            </div>
+            <div className={styles.links}>
+              <p>This Website</p>
+              <p>Shopping Cart</p>
+              <p>Movie App</p>
+            </div>
+          </div>
+        )}
         <hr />
       </div>
     </div>
