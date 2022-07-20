@@ -2,7 +2,7 @@ import styles from "../../styles/pages/Project.module.css";
 import NudeLayout from "../../components/layouts/NudeLayout";
 import Image from "next/image";
 import CheckItOut from "../../components/CheckItOut";
-import { projectItems, liveChatImages } from "../../utils/data";
+import { liveChatImages } from "../../utils/data";
 
 export default function LiveChat() {
   return (
@@ -10,6 +10,7 @@ export default function LiveChat() {
       <div className={styles.title}>
         <h1>Live Chat</h1>
       </div>
+
       <div className={styles.summary}>
         <h2>
           The objective of this project is to practice using Vue + Vite by
@@ -54,16 +55,15 @@ export default function LiveChat() {
           </div>
         </div>
       </div>
-
+      <div className={styles.imageContainer}>
+        <Image
+          src={"/images/demo-images/chat.gif"}
+          alt="demo"
+          width={1000}
+          height={484}
+        />
+      </div>
       <div className={styles.contents}>
-        <div className={styles.imageContainer}>
-          <Image
-            src={"/images/demo-images/chat.gif"}
-            alt="demo"
-            width={1000}
-            height={484}
-          />
-        </div>
         <div className={styles.features}>
           <h2>Features</h2>
           <p>Signup / Login for authentication</p>
