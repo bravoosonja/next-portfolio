@@ -53,30 +53,6 @@ export const projectItems = [
     github: "https://github.com/bravoosonja/shopping-cart",
     live: "https://regal-faun-bcff09.netlify.app/",
   },
-  {
-    name: "Library",
-    keywords: ["Vanilla JavaScript", "CRUD", "Local Storage", "HTML/CSS"],
-    id: "library",
-    image: "/images/floating-images/library.png",
-    github: "https://github.com/bravoosonja/library",
-    live: "https://bravoosonja.github.io/library",
-  },
-  {
-    name: "Calculator",
-    keywords: ["Vanilla JavaScript", "HTML/CSS"],
-    id: "calculator",
-    image: "/images/floating-images/calculator.png",
-    github: "https://github.com/bravoosonja/calculator",
-    live: "https://bravoosonja.github.io/calculator/",
-  },
-  {
-    name: "Etch A Sketch",
-    keywords: ["Vanilla JavaScript", "DOM", "HTML/CSS"],
-    id: "etch-a-sketch",
-    image: "/images/floating-images/etch-a-sketch.png",
-    github: "https://github.com/bravoosonja/etchasketch",
-    live: "https://bravoosonja.github.io/etchasketch",
-  },
 ];
 
 export const skillsItems = [
@@ -89,11 +65,6 @@ export const skillsItems = [
     name: "Vue",
     keywords: ["Vue3", "Vite"],
     pages: ["live-chat"],
-  },
-  {
-    name: "JavaScript",
-    keywords: ["vanilla JavaScript"],
-    pages: ["calculator", "library", "etch-a-sketch"],
   },
 ];
 

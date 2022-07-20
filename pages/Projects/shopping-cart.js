@@ -24,7 +24,7 @@ export default function ShoppingCart() {
           <div className={styles.technique}>
             <ul>Technique</ul>
             <li>React Context API</li>
-            <li>Global style for styled components</li>
+            <li>Styled components global style</li>
             <li>CSS animation</li>
           </div>
           <div className={styles.demoLinks}>

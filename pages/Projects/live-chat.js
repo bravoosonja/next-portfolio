@@ -21,7 +21,7 @@ export default function LiveChat() {
           <div className={styles.techStack}>
             <ul>Built with</ul>
             <li>Vue 3 + Vite</li>
-            <li>Firebase - Database & Authentication</li>
+            <li>Firebase</li>
             <li>CSS</li>
           </div>
           <div className={styles.technique}>

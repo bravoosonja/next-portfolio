@@ -71,6 +71,10 @@ export default function About() {
           </p>
           <Button text={"Contact me"} href={"/contact"} />
         </section>
+        <section>
+          <h2 className={styles.sectionTitle}>Acknowledgement</h2>
+          <p className="para">Design inspiration for this site.</p>
+        </section>
       </div>
       <div className="rightContainer"></div>
     </div>
