@@ -1,10 +1,11 @@
 import { useState } from "react";
-import styles from "../styles/components/Accordion.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import styles from "../styles/components/Accordion.module.css";
 import DownArrow from "../assets/icons/down-arrow.png";
 import UpArrow from "../assets/icons/up-arrow.png";
 import { skillsItems } from "../utils/data";
-import Link from "next/link";
 
 export default function Accordion() {
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -29,26 +30,38 @@ export default function Accordion() {
               <Image src={DownArrow} alt="down arrow" />
             )}
           </div>
-          {activeIndex === index && (
-            <div className={styles.content}>
-              <div className={styles.keywords}>
-                {item.keywords.map((keyword, index) => (
-                  <li className={styles.keywords} key={index}>
-                    {keyword}
-                  </li>
-                ))}
-              </div>
-
-              {item.pages.map((page, index) => (
-                <div className={styles.links} key={index}>
-                  <Link href={"/projects/" + page} key={index}>
-                    <a key={index}>{page.replace(/-/g, " ")}</a>
-                  </Link>
+          <AnimatePresence initial={false}>
+            {activeIndex === index && (
+              <motion.div
+                className={styles.content}
+                key="content"
+                initial="collapsed"
+                animate="open"
+                variants={{
+                  open: { opacity: 1, height: "auto" },
+                  collapsed: { opacity: 0, height: 0 },
+                }}
+                transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+              >
+                <div className={styles.keywords}>
+                  {item.keywords.map((keyword, index) => (
+                    <li className={styles.keywords} key={index}>
+                      {keyword}
+                    </li>
+                  ))}
                 </div>
-              ))}
-            </div>
-          )}
-          <hr />
+
+                {item.pages.map((page, index) => (
+                  <div className={styles.links} key={index}>
+                    <Link href={"/projects/" + page} key={index}>
+                      <a key={index}>{page.replace(/-/g, " ")}</a>
+                    </Link>
+                  </div>
+                ))}
+              </motion.div>
+            )}
+            <hr />
+          </AnimatePresence>
         </div>
       ))}
     </div>

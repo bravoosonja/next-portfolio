@@ -49,22 +49,6 @@ export default function About() {
           <h2 className={styles.sectionTitle}>Skills</h2>
           <p className="para">Projects by web development technologies</p>
           <Accordion />
-          {/* <div className={styles.skillsContainer}>
-            <div className={styles.skillsGrid}>
-              <div>
-                <h3>React</h3>
-                <p>This Website</p>
-                <p>Movie App</p>
-                <p>Shopping Cart</p>
-              </div>
-              <div>
-                <h3>Vue</h3>
-                <p>Live Chat</p>
-              </div>
-              <h3>JavaScript</h3>
-              <p></p>
-            </div>
-          </div> */}
         </section>
         <section>
           <h2 className={styles.sectionTitle}>Experience</h2>
