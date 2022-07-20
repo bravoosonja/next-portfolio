@@ -97,3 +97,21 @@ export const liveChatImages = [
     alt: "light mode chat",
   },
 ];
+
+export const skillsItems = [
+  {
+    name: "React",
+    keywords: ["Next JS", "Styled-components"],
+    pages: ["this-website", "shopping-cart", "movie-app"],
+  },
+  {
+    name: "Vue",
+    keywords: ["Vue3", "Vite"],
+    pages: ["live-chat"],
+  },
+  {
+    name: "JavaScript",
+    keywords: ["vanilla JavaScript"],
+    pages: ["calculator", "library", "etch-a-sketch"],
+  },
+];

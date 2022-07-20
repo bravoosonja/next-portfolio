@@ -21,11 +21,19 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .links {
-  padding: 1.3rem 0;
+  padding: 1rem;
+}
+
+.links a {
+  text-transform: uppercase;
+}
+
+.links a :hover {
+  text-decoration: underline;
 }
 
 .item li {
@@ -39,9 +47,12 @@
   margin-right: 2rem;
 }
 
-.item p {
-  font-size: 2rem;
-  line-height: 1.7;
+.item a {
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .item hr {
@@ -52,7 +63,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.content {
 }

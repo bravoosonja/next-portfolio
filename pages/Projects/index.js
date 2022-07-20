@@ -48,7 +48,7 @@ export default function Projects() {
             onMouseLeave={() => setActiveId(null)}
           >
             <Link href={"/projects/" + item.id} key={item.id}>
-              <a key={item.id}>
+              <a>
                 <h1 className={styles.projectTitle}>{item.name}</h1>
               </a>
             </Link>
