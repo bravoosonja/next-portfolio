@@ -13,12 +13,12 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #ff70a6;
-  mix-blend-mode: difference;
+  border: 2px solid #fbff12;
 }
 
 .square {
   width: 8px;
   height: 8px;
-  background-color: #fbff12;
+  background-color: white;
+  mix-blend-mode: difference;
 }
