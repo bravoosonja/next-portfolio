@@ -2,13 +2,11 @@
   max-width: 100%;
   max-width: 80rem;
   margin: 0 auto;
-  /* padding: 0 1.5rem; */
 }
 
 .accordionItem {
   background-color: var(--black);
-  /* border-radius: 0.4rem; */
-  padding: 3rem;
+  padding: 2rem 3rem;
 }
 
 .accordionItem hr {
@@ -85,5 +83,5 @@
 }
 
 .icon {
-  transform: scale(0.75);
+  transform: scale(0.7);
 }

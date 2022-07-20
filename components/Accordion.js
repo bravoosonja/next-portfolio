@@ -14,16 +14,15 @@ export default function Accordion() {
         onClick={() => setIsActive(!isActive)}
       >
         <div className={styles.accordionTitle}>
-          <div className={styles.flex}>
-            <h3>React</h3>
-            {isActive ? (
-              <Image src={UpArrow} alt="up arrow" />
-            ) : (
-              <Image src={DownArrow} alt="down arrow" />
-            )}
-          </div>
+          {/* <div className={styles.flex}> */}
+          <h3>React</h3>
+          {isActive ? (
+            <Image src={UpArrow} alt="up arrow" />
+          ) : (
+            <Image src={DownArrow} alt="down arrow" />
+          )}
+          {/* </div> */}
         </div>
-
         {isActive && (
           <div className={styles.answer}>
             <p>
