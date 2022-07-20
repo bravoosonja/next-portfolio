@@ -1,0 +1,23 @@
+.outline,
+.square {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.outline {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #e9ff70;
+}
+
+.square {
+  width: 8px;
+  height: 8px;
+  background-color: #fb5607;
+}
