@@ -7,22 +7,29 @@ import { skillsItems } from "../utils/data";
 import Link from "next/link";
 
 export default function Accordion() {
-  const [isActive, setIsActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  const handleSetIndex = (index) =>
+    activeIndex !== index && setActiveIndex(index);
 
   return (
     <div className={styles.accordion}>
       {skillsItems.map((item, index) => (
         <div className={styles.item} key={index}>
-          <div className={styles.title} onClick={() => setIsActive(!isActive)}>
+          <div className={styles.title} onClick={() => handleSetIndex(index)}>
             <h3 className={styles.titleHeading}>{item.name}</h3>
 
-            {isActive ? (
-              <Image src={UpArrow} alt="up arrow" />
+            {activeIndex === index ? (
+              <Image
+                src={UpArrow}
+                alt="up arrow"
+                onClick={() => handleSetIndex(-1)}
+              />
             ) : (
               <Image src={DownArrow} alt="down arrow" />
             )}
           </div>
-          {isActive && (
+          {activeIndex === index && (
             <div className={styles.content}>
               <div className={styles.keywords}>
                 {item.keywords.map((keyword, index) => (

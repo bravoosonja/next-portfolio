@@ -57,6 +57,7 @@
 
 .item hr {
   border: 1px solid var(--nude);
+  margin: 1rem 0;
 }
 
 .title {
