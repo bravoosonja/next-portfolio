@@ -1,12 +1,13 @@
 .cta {
   border: none;
   background: none;
+  padding: 2.5rem 0;
 }
 
 .cta span {
   padding-bottom: 7px;
   letter-spacing: 4px;
-  font-size: inherit;
+  font-size: 1.7rem;
   padding-right: 15px;
   text-transform: uppercase;
 }

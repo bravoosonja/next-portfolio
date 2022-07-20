@@ -52,7 +52,24 @@ export default function About() {
         </section>
         <section>
           <h2 className={styles.sectionTitle}>Experience</h2>
+          <p className="para">
+            This is part of Experience section. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Consectetur magni dolor eos provident
+            nobis ducimus reprehenderit, accusantium quo labore necessitatibus
+            numquam sunt iure eveniet qui inventore. Provident, dolorem!
+            Voluptate, sint.
+          </p>
           <Button text={"My CV (pdf, 46 KB)"} href={"#"} />
+        </section>
+        <section>
+          <p className="para">
+            This is part of Contact me section. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Consectetur magni dolor eos provident
+            nobis ducimus reprehenderit, accusantium quo labore necessitatibus
+            numquam sunt iure eveniet qui inventore. Provident, dolorem!
+            Voluptate, sint.
+          </p>
+          <Button text={"Contact me"} href={"/contact"} />
         </section>
       </div>
       <div className="rightContainer"></div>
