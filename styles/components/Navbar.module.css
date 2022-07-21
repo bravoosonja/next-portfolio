@@ -16,3 +16,16 @@
   text-orientation: sideways;
   transform: rotate(180deg);
 }
+
+@media (max-width: 390px) {
+  .navbar {
+    height: 10vh;
+    width: 100%;
+  }
+
+  .navbarItems {
+    text-orientation: sideways;
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+  }
+}

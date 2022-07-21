@@ -199,7 +199,7 @@ video {
 }
 
 .rightContainerTitle {
-  font-size: 13.5rem;
+  font-size: 11vw;
   line-height: 1.2;
 }
 
@@ -207,9 +207,45 @@ video {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 390px) {
+  .container {
+    padding: 0;
+  }
+
+  .main {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+  }
+
   .grid {
     width: 100%;
-    flex-direction: column;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+  }
+
+  .leftContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightContainer {
+    height: 100%;
+    position: relative;
+  }
+
+  .rightContainerTitle {
+    font-size: 8rem;
+    line-height: 1.2;
   }
 }
