@@ -1,1 +1,14 @@
-@use "../library" as *;
+.title {
+  font-family: "Armouk";
+  font-size: 15rem;
+  line-height: 1;
+}
+
+.word {
+  display: inline-block;
+  /* margin-right: 1rem; */
+}
+
+.character {
+  display: inline-block;
+}

@@ -1,10 +1,10 @@
 import styles from "../styles/components/Button.module.css";
 
-export default function Button({ text, href }) {
+export default function Button({ text, href, target }) {
   return (
     <button className={styles.cta}>
       <span className={styles.hoverUnderlineAnimation}>
-        <a target="_blank" rel="noreferrer" href={href}>
+        <a target={target} rel="noreferrer" href={href}>
           {text}
         </a>
       </span>

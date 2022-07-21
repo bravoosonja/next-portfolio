@@ -2,21 +2,25 @@ import styles from "../styles/pages/About.module.css";
 import NudeLayout from "../components/layouts/NudeLayout";
 import Button from "../components/Button";
 import Accordion from "../components/Accordion";
+import AnimatedTitle from "../components/AnimatedTitle";
+import Link from "next/link";
 
 export default function About() {
   return (
     <div className={styles.about}>
       <div className={styles.content}>
-        <h1 className={styles.aboutTitle}>About</h1>
-        <section>
-          <div className={styles.quote}>
-            <blockquote>
-              A voracious life-long student of problem-solving, and a tenacious
-              seeker of aesthetic values
-            </blockquote>
-          </div>
-        </section>
-        <section className={styles.text}>
+        <div className={styles.aboutTitle}>
+          <AnimatedTitle textToAnimate={"About"} />
+        </div>
+
+        <div className={styles.quote}>
+          <blockquote>
+            A voracious life-long student of problem-solving, and a tenacious
+            seeker of aesthetic values
+          </blockquote>
+        </div>
+
+        <div className={styles.text}>
           <p className="para">
             A lifetime ago, I was living in South Korea where I worked as a
             fashion model agent for over seven years.
@@ -44,13 +48,11 @@ export default function About() {
             React, and now Vue, dreaming of one day, I will achieve the glorious
             victory that is <em>mastery</em>.
           </p>
-        </section>
-        <section>
+
           <h2 className={styles.sectionTitle}>Skills</h2>
           <p className="para">Projects by web development technologies</p>
           <Accordion />
-        </section>
-        <section>
+
           <h2 className={styles.sectionTitle}>Experience</h2>
           <p className="para">
             This is part of Experience section. Lorem ipsum dolor sit amet,
@@ -59,9 +61,8 @@ export default function About() {
             numquam sunt iure eveniet qui inventore. Provident, dolorem!
             Voluptate, sint.
           </p>
-          <Button text={"My CV (pdf, 46 KB)"} href={"#"} />
-        </section>
-        <section>
+          <Button text={"My CV (pdf, 46 KB)"} href={"#"} target={"_blank"} />
+
           <p className="para">
             This is part of Contact me section. Lorem ipsum dolor sit amet,
             consectetur adipisicing elit. Consectetur magni dolor eos provident
@@ -69,14 +70,15 @@ export default function About() {
             numquam sunt iure eveniet qui inventore. Provident, dolorem!
             Voluptate, sint.
           </p>
-          <Button text={"Contact me"} href={"/contact"} />
-        </section>
-        <section>
+          <Link href="/contact">
+            <Button text={"Contact me"} href={"/contact"} target={""} />
+          </Link>
+
           <h2 className={styles.sectionTitle}>Acknowledgement</h2>
           <p className="para">Design inspiration for this site.</p>
-        </section>
+        </div>
+        <div className="rightContainer"></div>
       </div>
-      <div className="rightContainer"></div>
     </div>
   );
 }

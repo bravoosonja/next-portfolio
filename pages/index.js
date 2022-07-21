@@ -1,7 +1,6 @@
 import Head from "next/head";
 import NudeLayout from "../components/layouts/NudeLayout";
 import Link from "next/link";
-import { menuItems } from "../utils/data";
 
 export default function Home() {
   return (

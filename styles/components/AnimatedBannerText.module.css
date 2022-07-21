@@ -10,7 +10,6 @@
   .container {
     display: flex;
     justify-content: center;
-    cursor: pointer;
 
     .letterContainer {
       font-size: 8rem;
@@ -23,7 +22,6 @@
       div {
         top: 0;
         left: 0;
-        pointer-events: none;
       }
     }
   }

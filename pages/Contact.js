@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles/pages/Contact.module.css";
 import BlackLayout from "../components/layouts/BlackLayout";
+import AnimatedTitle from "../components/AnimatedTitle";
 
 export default function Contact() {
   function copyToClipboard() {
@@ -14,7 +15,7 @@ export default function Contact() {
     <div className="grid">
       <div className="leftContainer">
         <div className={styles.content}>
-          <h1>Contact</h1>
+          <AnimatedTitle textToAnimate={"Contact"} />
           <div className={styles.email}>
             <motion.span
               className={styles.underline}
