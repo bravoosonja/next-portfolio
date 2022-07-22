@@ -42,12 +42,7 @@ export const projectItems = [
   },
   {
     name: "Shopping Cart",
-    keywords: [
-      "React",
-      "Styled-components",
-      "Context API",
-      "Responsive Design",
-    ],
+    keywords: ["React", "Styled-components", "Context API"],
     id: "shopping-cart",
     image: "/images/floating-images/shopping-cart.png",
     github: "https://github.com/bravoosonja/shopping-cart",

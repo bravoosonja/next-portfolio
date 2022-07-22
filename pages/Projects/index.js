@@ -1,49 +1,24 @@
 //TODO: Render floating image
 
-import { useState } from "react";
 import styles from "../../styles/pages/Projects.module.css";
 import BlackLayout from "../../components/layouts/BlackLayout";
 import { projectItems } from "../../utils/data";
 import Link from "next/link";
-import Image from "next/image";
-
-// function FloatingImage({ image, active, key }) {
-//   return (
-//     <div key={key}>
-//       <Image
-//         className={`${styles.active} ${styles.isActive}`}
-//         src={image}
-//         alt="floating project"
-//         width={400}
-//         heigh={300}
-//       />
-//       ;
-//     </div>
-//   );
-// }
 
 export default function Projects() {
-  // floating image
-  const [activeId, setActiveId] = useState(null);
-
   return (
-    <div className="grid">
-      <div className="leftContainer">
-        <div className="leftContent">
-          <p className="leftTitle">Projects</p>
-          <p className="leftContentText">
+    <div className={styles.projects}>
+      <div className={styles.leftContainer}>
+        <div className={styles.leftContent}>
+          <p className={styles.leftTitle}>Projects</p>
+          <p className={styles.leftContentText}>
             This is a showcase of my selected web development projects.
           </p>
         </div>
       </div>
-      <div className="rightContainer">
+      <div className={styles.projectsContainer}>
         {projectItems.map((item) => (
-          <div
-            className={styles.projectItems}
-            key={item.id}
-            onMouseEnter={() => setActiveId(item.id)}
-            onMouseLeave={() => setActiveId(null)}
-          >
+          <div className={styles.projectItems} key={item.id}>
             <Link href={"/projects/" + item.id} key={item.id}>
               <a>
                 <h1 className={styles.projectTitle}>{item.name}</h1>
@@ -56,17 +31,6 @@ export default function Projects() {
             </div>
           </div>
         ))}
-
-        {/* <div className={styles.projectMedia}>
-          {projectItems.map((image) => {
-            const isActive = image === activeId;
-            <FloatingImage
-              image={image.image}
-              active={isActive}
-              key={image.id}
-            />;
-          })}
-        </div> */}
       </div>
     </div>
   );
