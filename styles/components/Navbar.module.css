@@ -17,15 +17,25 @@
   transform: rotate(180deg);
 }
 
-@media (max-width: 414px) {
-  .navbar {
-    height: 10vh;
-    width: 100%;
-  }
+.mobileNavbar {
+  height: 10vh;
+  width: 100%;
+  padding: 1rem;
+}
 
-  .navbarItems {
-    text-orientation: sideways;
-    writing-mode: horizontal-tb;
-    transform: rotate(360deg);
-  }
+.mobileNavbar hr {
+  border: 1px solid var(--black);
+  mix-blend-mode: exclusion;
+}
+
+.mobileNavbarItems {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.mobileNavbarItems h1 {
+  font-size: 2rem;
+  line-height: 1;
 }

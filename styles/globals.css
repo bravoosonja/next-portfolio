@@ -204,6 +204,20 @@ video {
   margin-bottom: 2rem;
 }
 
+/* mobile menu */
+
+.menu h1 {
+  font-size: 6rem;
+}
+
+.menu p {
+  text-align: right;
+}
+
+.menu hr {
+  width: 100%;
+}
+
 @media (max-width: 414px) {
   .container {
     padding: 0 1rem;
