@@ -22,7 +22,8 @@ export default function Home() {
               Pronounced as <span>Song-nah</span>
             </p>
             <p className="leftContentText">
-              I enjoy developing aesthetic and fun user experience.
+              I like to apply logic and structure to create an aesthetic, fun
+              user experience that provides value and robust functionality.
             </p>
           </div>
         </div>
