@@ -21,21 +21,39 @@
   height: 10vh;
   width: 100%;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mobileNavbar h1 {
+  font-size: 2rem;
+  line-height: 1;
+  text-align: right;
 }
 
 .mobileNavbar hr {
-  border: 1px solid var(--black);
-  mix-blend-mode: exclusion;
+  border: 1px solid;
 }
 
 .mobileNavbarItems {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   text-transform: uppercase;
+  background: hsla(0, 0%, 50%, 0.1);
+  backdrop-filter: blur(1.3rem);
 }
 
-.mobileNavbarItems h1 {
-  font-size: 2rem;
-  line-height: 1;
+.menu {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu h1 {
+  font-size: 5.5rem;
+  line-height: 1.3;
 }

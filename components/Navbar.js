@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [windowDimension, setWindowDimension] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setWindowDimension(window.innerWidth);
@@ -20,18 +21,43 @@ export default function Navbar() {
   }, []);
 
   const isMobile = windowDimension <= 640;
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav>
+    <>
       {isMobile ? (
         <div className={styles.mobileNavbar}>
-          <div className={styles.mobileNavbarItems}>
-            <Link href="/menu">
-              <h1>
-                <a>Menu</a>
-              </h1>
-            </Link>
-          </div>
+          <h1 onClick={toggleMenu}>{isOpen ? "CLOSE" : "MENU"}</h1>
           <hr />
+          {isOpen && (
+            <div className={styles.mobileNavbarItems}>
+              <div className={styles.menu}>
+                <Link href="/">
+                  <h1>
+                    <a>Home</a>
+                  </h1>
+                </Link>
+                <Link href="/about">
+                  <h1>
+                    <a>About</a>
+                  </h1>
+                </Link>
+                <Link href="/projects">
+                  <h1>
+                    <a>Projects</a>
+                  </h1>
+                </Link>
+                <Link href="/contact">
+                  <h1>
+                    <a>Contact</a>
+                  </h1>
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         <div className={styles.navbar}>
@@ -46,6 +72,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </nav>
+    </>
   );
 }

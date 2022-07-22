@@ -3,7 +3,7 @@ import Navbar from "../Navbar";
 export default function NudeLayout({ children }) {
   return (
     <div className="container">
-      <nav>
+      <nav className="nude">
         <Navbar />
       </nav>
       <div className="main">

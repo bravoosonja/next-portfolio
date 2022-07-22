@@ -1,16 +1,17 @@
 @font-face {
   font-family: "Mier";
-  src: url("../assets/fonts/MierA-Regular.woff2") format("woff2");
+  src: url("/fonts/MierA-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Armouk";
-  src: url("../assets/fonts/Armouk.woff2") format("woff2");
+  src: url("/fonts/Armouk.woff2") format("woff2");
 }
 
 :root {
   --nude: #eee7e1;
   --black: #1a1919;
+  --orange: #ff7241;
   --light-gray: hsla(0, 1%, 14%, 0.473);
   --dark-gray: hsla(0, 0%, 23%, 0.568);
   --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -202,20 +203,6 @@ video {
 
 .para {
   margin-bottom: 2rem;
-}
-
-/* mobile menu */
-
-.menu h1 {
-  font-size: 6rem;
-}
-
-.menu p {
-  text-align: right;
-}
-
-.menu hr {
-  width: 100%;
 }
 
 @media (max-width: 414px) {

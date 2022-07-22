@@ -5,11 +5,26 @@ export default function MobileMenu() {
     <div className="container black">
       <div className="main">
         <div className="menu">
-          <p>CLOSE</p>
-          <hr />
-          <h1>About</h1>
-          <h1>Projects</h1>
-          <h1>Contact</h1>
+          <Link href="/">
+            <h1>
+              <a>Home</a>
+            </h1>
+          </Link>
+          <Link href="/about">
+            <h1>
+              <a>About</a>
+            </h1>
+          </Link>
+          <Link href="/projects">
+            <h1>
+              <a>Projects</a>
+            </h1>
+          </Link>
+          <Link href="/contact">
+            <h1>
+              <a>Contact</a>
+            </h1>
+          </Link>
         </div>
       </div>
     </div>
