@@ -12,3 +12,15 @@
 .character {
   display: inline-block;
 }
+
+@media (max-width: 414px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 393px) {
+}
+
+@media (max-width: 375px) {
+}

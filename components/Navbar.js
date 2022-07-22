@@ -30,28 +30,30 @@ export default function Navbar() {
     <>
       {isMobile ? (
         <div className={styles.mobileNavbar}>
-          <h1 onClick={toggleMenu}>{isOpen ? "CLOSE" : "MENU"}</h1>
-          <hr />
+          <div className={styles.overlay}>
+            <h1 onClick={toggleMenu}>{isOpen ? "CLOSE" : "MENU"}</h1>
+            <hr />
+          </div>
           {isOpen && (
             <div className={styles.mobileNavbarItems}>
               <div className={styles.menu}>
                 <Link href="/">
-                  <h1>
+                  <h1 onClick={toggleMenu}>
                     <a>Home</a>
                   </h1>
                 </Link>
                 <Link href="/about">
-                  <h1>
+                  <h1 onClick={toggleMenu}>
                     <a>About</a>
                   </h1>
                 </Link>
                 <Link href="/projects">
-                  <h1>
+                  <h1 onClick={toggleMenu}>
                     <a>Projects</a>
                   </h1>
                 </Link>
                 <Link href="/contact">
-                  <h1>
+                  <h1 onClick={toggleMenu}>
                     <a>Contact</a>
                   </h1>
                 </Link>

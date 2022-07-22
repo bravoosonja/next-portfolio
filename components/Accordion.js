@@ -43,13 +43,13 @@ export default function Accordion() {
                 }}
                 transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
               >
-                <div className={styles.keywords}>
+                {/* <div className={styles.keywords}>
                   {item.keywords.map((keyword, index) => (
                     <li className={styles.keywords} key={index}>
                       {keyword}
                     </li>
                   ))}
-                </div>
+                </div> */}
 
                 {item.pages.map((page, index) => (
                   <div className={styles.links} key={index}>

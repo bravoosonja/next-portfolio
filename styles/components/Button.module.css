@@ -34,9 +34,9 @@
 .hoverUnderlineAnimation:after {
   content: "";
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   transform: scaleX(0);
-  height: 1.5px;
+  max-height: 1.5px;
   bottom: 0;
   left: 0;
   background-color: #000000;
@@ -47,4 +47,10 @@
 .cta:hover .hoverUnderlineAnimation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media (max-width: 414px) {
+  .cta span {
+    font-size: 1.5rem;
+  }
 }
