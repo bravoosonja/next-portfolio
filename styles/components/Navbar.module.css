@@ -17,7 +17,7 @@
   transform: rotate(180deg);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 414px) {
   .navbar {
     height: 10vh;
     width: 100%;

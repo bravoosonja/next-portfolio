@@ -32,10 +32,7 @@ export default function Projects() {
         <div className="leftContent">
           <p className="leftTitle">Projects</p>
           <p className="leftContentText">
-            This is a showcase of my selected web development projects from
-            vanilla JavaScript to React and Vue. This is a showcase of my
-            selected web development projects from vanilla JavaScript to React
-            and Vue.
+            This is a showcase of my selected web development projects.
           </p>
         </div>
       </div>
