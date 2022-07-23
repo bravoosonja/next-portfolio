@@ -2,8 +2,8 @@ import Navbar from "../Navbar";
 
 export default function BlackLayout({ children }) {
   return (
-    <div className="container black">
-      <nav>
+    <div className="black container">
+      <nav className="black">
         <Navbar />
       </nav>
       <div className="main">

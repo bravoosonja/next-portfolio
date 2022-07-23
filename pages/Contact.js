@@ -16,7 +16,7 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.grid}>
+    <div className={styles.contact}>
       <div className={styles.leftContainer}>
         <div className={styles.content}>
           <AnimatedTitle textToAnimate={"Contact"} />

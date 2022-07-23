@@ -127,3 +127,12 @@
 .noteToSelf li {
   font-size: 1.2rem;
 }
+
+@media (max-width: 414px) {
+}
+
+@media (max-width: 393px) {
+}
+
+@media (max-width: 375px) {
+}
