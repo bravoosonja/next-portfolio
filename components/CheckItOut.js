@@ -6,7 +6,7 @@ export default function CheckItOut({ githubLink, liveLink }) {
       <h1>Check it out.</h1>
       <div className={styles.linksContainer}>
         <a
-          className={styles.githubLink}
+          className="hoverUnderline"
           target="_blank"
           rel="noreferrer"
           href={githubLink}
@@ -14,7 +14,7 @@ export default function CheckItOut({ githubLink, liveLink }) {
           GITHUB
         </a>
         <a
-          className={styles.liveLink}
+          className="hoverUnderline"
           target="_blank"
           rel="noreferrer"
           href={liveLink}

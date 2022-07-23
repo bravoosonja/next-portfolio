@@ -87,14 +87,6 @@ export default function ShoppingCart() {
         {/* end of images */}
 
         <div className={styles.description}></div>
-        <div className={styles.noteToSelf}>
-          <h3>Note to self</h3>
-          <ol>
-            <li>Learning new framework is fun but</li>
-            <li>Master React, and Vue first</li>
-            <li>Then maybe Svelte</li>
-          </ol>
-        </div>
       </div>
       {/* end of description */}
       <CheckItOut

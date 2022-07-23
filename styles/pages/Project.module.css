@@ -21,8 +21,7 @@
 
 .summary {
   max-width: 80%;
-  padding: 10rem;
-  margin: 0 auto;
+  padding: 10% 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -36,13 +35,14 @@
 }
 
 .grid {
-  padding-top: 5rem;
+  padding-top: 5%;
   display: grid;
   grid-template-columns: 1.5fr 2.5fr 1fr;
   justify-content: space-around;
   align-items: flex-start;
   grid-gap: 5rem;
   max-width: 80%;
+  font-family: "Mier";
 }
 
 .grid ul {
@@ -58,13 +58,29 @@
   font-size: 1.2rem;
 }
 
-.techStack,
-.demoLinks {
-  font-family: "Mier";
+.hoverUnderline {
+  display: inline-block;
+  position: relative;
+  color: var(--black);
+  cursor: pointer;
 }
 
-.demoLinks a {
-  text-decoration: underline;
+.hoverUnderline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  background-color: var(--black);
+}
+
+.hoverUnderline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .contents {
@@ -74,15 +90,12 @@
   align-items: center;
   width: 95%;
   height: 100%;
-  padding: 0 2rem;
 }
 
 .imageContainer {
   box-shadow: var(--box-shadow);
-  margin: 2rem;
-  width: 1920;
-  height: 929;
-  object-fit: cover;
+  display: block;
+  margin: 1rem;
 }
 
 .features {
@@ -93,13 +106,14 @@
   padding: 5rem;
 }
 
-.features > h2 {
+.features h2 {
   font-family: "Armouk";
   font-size: 4rem;
 }
 
-.features > p {
+.features p {
   font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 .description {
@@ -108,31 +122,85 @@
   width: 60vw;
 }
 
-.noteToSelf {
-  /* outline: 2px solid var(--black); */
-  width: 85%;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  gap: 5rem;
-}
-
-.noteToSelf h3 {
-  font-family: "Armouk";
-  font-size: 4rem;
-}
-
-.noteToSelf li {
-  font-size: 1.2rem;
-}
-
 @media (max-width: 414px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 7rem;
+    height: 50vh;
+    width: 100%;
+    line-height: 1;
+    padding: 0 1rem;
+  }
+
+  .summary {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .summary h2 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 0;
+    grid-gap: 1rem;
+    width: 100%;
+  }
+
+  .grid ul {
+    margin-bottom: 0.5rem;
+  }
+
+  .contents {
+    width: 100%;
+  }
+
+  .imageContainer {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .features {
+    align-items: flex-start;
+    padding: 1.3rem;
+    max-width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .features p {
+    font-size: 1 3rem;
+    line-height: 1;
+  }
+
+  .description {
+    padding: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 393px) {
+  .title {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 375px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .description p {
+    font-size: 1.3rem;
+  }
 }

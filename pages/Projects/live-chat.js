@@ -39,6 +39,7 @@ export default function LiveChat() {
                 target="_blank"
                 href="https://github.com/bravoosonja/live-chat"
                 rel="noreferrer"
+                className={styles.hoverUnderline}
               >
                 Github
               </a>
@@ -48,6 +49,7 @@ export default function LiveChat() {
                 target="_blank"
                 href="https://vue-firebase-4dc0a.web.app/"
                 rel="noreferrer"
+                className={styles.hoverUnderline}
               >
                 Live
               </a>
@@ -124,14 +126,6 @@ export default function LiveChat() {
             new way of manipulating DOM. Perhaps I’m in the honeymoon phase with
             Vue, but I cannot wait to learn more about the way of Vue.
           </p>
-        </div>
-        <div className={styles.noteToSelf}>
-          <h3>Note to self</h3>
-          <ol>
-            <li>Learning new framework is fun but</li>
-            <li>Master React, and Vue first</li>
-            <li>Then maybe Svelte</li>
-          </ol>
         </div>
       </div>
       <CheckItOut
