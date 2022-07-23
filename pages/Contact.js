@@ -5,62 +5,56 @@ import BlackLayout from "../components/layouts/BlackLayout";
 import AnimatedTitle from "../components/AnimatedTitle";
 
 export default function Contact() {
-  function copyToClipboard() {
-    navigator.clipboard.writeText("songnachoi@gmail.com");
-  }
+  const [isClicked, setIsClicked] = useState(false);
 
-  const [isHovered, setIsHovered] = useState(false);
+  const clickHandler = () => {
+    setIsClicked(true);
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("songnachoi@gmail.com");
+  };
 
   return (
-    <div className="grid">
-      <div className="leftContainer">
+    <div className={styles.grid}>
+      <div className={styles.leftContainer}>
         <div className={styles.content}>
           <AnimatedTitle textToAnimate={"Contact"} />
-          <div className={styles.email}>
-            <motion.span
-              className={styles.underline}
-              onMouseOver={() => setIsHovered(true)}
-              onMouseOut={() => setIsHovered(false)}
+          <div className={styles.emailContainer}>
+            <div className={styles.copyText}>
+              {isClicked ? "Copied!" : "Click to copy to clipboard"}
+            </div>
+            <p
+              className="hoverUnderline"
+              id="email"
               onClick={() => {
                 copyToClipboard();
+                clickHandler();
               }}
             >
               songnachoi@gmail.com
-            </motion.span>
-            <motion.span
-              className={styles.copyText}
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: isHovered ? "1" : "0",
-                // x: isHovered ? "0" : "50",
-              }}
-              transition={{
-                duration: isHovered ? "0.7" : "0.7",
-                ease: [0.2, 0.65, 0.3, 0.9],
-              }}
-            >
-              Click to copy to clipboard
-            </motion.span>
+            </p>
           </div>
           <div className={styles.links}>
             <a
               target="_blank"
               href="https://github.com/bravoosonja"
               rel="noreferrer"
+              className="hoverUnderline"
             >
-              github
+              Github
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/songna-c"
               rel="noreferrer"
+              className="hoverUnderline"
             >
-              linkedin
+              LinkedIn
             </a>
           </div>
         </div>
       </div>
-      <div className="rightContainer"></div>
     </div>
   );
 }
