@@ -43,17 +43,34 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
-          <Link href="/about">
-            <a>
-              <h1 className="rightContainerTitle">About</h1>
-            </a>
-          </Link>
-          <Link href="/contact">
-            <a>
-              <h1 className="rightContainerTitle">Contact</h1>
-            </a>
-          </Link>
+          <div className="menuItem">
+            <div className="marquee">
+              <Link href="/about">
+                <a>
+                  <div className="marqueeInner" aria-hidden="true">
+                    <h1>About</h1>
+                    <h1>About</h1>
+                    <h1>About</h1>
+                    <h1>About</h1>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="menuItem">
+            <div className="marquee">
+              <Link href="/contact">
+                <a>
+                  <div className="marqueeInner" aria-hidden="true">
+                    <h1>Contact</h1>
+                    <h1>Contact</h1>
+                    <h1>Contact</h1>
+                    <h1>Contact</h1>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </>
