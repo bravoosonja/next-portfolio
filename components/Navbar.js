@@ -20,7 +20,7 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isMobile = windowDimension <= 640;
+  const isMobile = windowDimension <= 1023;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

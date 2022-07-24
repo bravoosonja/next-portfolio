@@ -39,7 +39,7 @@
   max-width: 100%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 1023px) {
   .about {
     display: grid;
     grid-template-columns: 1fr;

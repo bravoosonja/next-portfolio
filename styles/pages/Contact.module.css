@@ -65,7 +65,7 @@
   line-height: 1.4;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 1023px) {
   .contact {
     grid-template-columns: 1fr;
     margin-top: 1rem;
@@ -74,7 +74,7 @@
   .content {
     top: 30vh;
     left: 2rem;
-    max-width: 80%;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
   }
