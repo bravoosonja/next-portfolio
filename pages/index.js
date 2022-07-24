@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NudeLayout from "../components/layouts/NudeLayout";
 import Link from "next/link";
+import AnimatedBannerText from "../components/AnimatedBannerText";
 
 export default function Home() {
   return (
@@ -28,11 +29,21 @@ export default function Home() {
           </div>
         </div>
         <div className="rightContainer">
-          <Link href="/projects">
-            <a>
-              <h1 className="rightContainerTitle">Projects</h1>
-            </a>
-          </Link>
+          <div className="menuItem">
+            <div className="marquee">
+              <Link href="/projects">
+                <a>
+                  <div className="marqueeInner" aria-hidden="true">
+                    <h1>Projects</h1>
+                    <h1>Projects</h1>
+                    <h1>Projects</h1>
+                    <h1>Projects</h1>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </div>
+
           <Link href="/about">
             <a>
               <h1 className="rightContainerTitle">About</h1>
