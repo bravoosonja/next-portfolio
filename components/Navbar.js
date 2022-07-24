@@ -64,13 +64,18 @@ export default function Navbar() {
       ) : (
         <div className={styles.navbar}>
           <div className={styles.navbarItems}>
-            <ActiveLink href="/contact">Contact</ActiveLink>
-
-            <ActiveLink href="/projects">Projects</ActiveLink>
-
-            <ActiveLink href="/about">About</ActiveLink>
-
-            <ActiveLink href="/">Home</ActiveLink>
+            <div className={styles.navbarItem}>
+              <ActiveLink href="/contact">Contact</ActiveLink>
+            </div>
+            <div className={styles.navbarItem}>
+              <ActiveLink href="/projects">Projects</ActiveLink>
+            </div>
+            <div className={styles.navbarItem}>
+              <ActiveLink href="/about">About</ActiveLink>
+            </div>
+            <div className={styles.navbarItem}>
+              <ActiveLink href="/">Home</ActiveLink>
+            </div>
           </div>
         </div>
       )}
