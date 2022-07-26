@@ -30,12 +30,9 @@ const containerTitle = {
 };
 
 const hover = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    scale: 1.13,
-    transition: { duration: 1.3, ease: [0.2, 0.65, 0.3, 0.9] },
-  },
+  opacity: 1,
+  scale: 1.13,
+  transition: { duration: 1.3, ease: [0.2, 0.65, 0.3, 0.9] },
 };
 
 export default function Home() {
@@ -83,19 +80,6 @@ export default function Home() {
                   </motion.div>
                 </a>
               </Link>
-
-              <motion.div variants={hover}>
-                <Link href={item.path}>
-                  <a>
-                    <Image
-                      src={"/assets/icons/arrow-right.svg"}
-                      width="70"
-                      height="70"
-                      alt="arrow right"
-                    />
-                  </a>
-                </Link>
-              </motion.div>
             </motion.div>
           ))}
         </motion.div>
