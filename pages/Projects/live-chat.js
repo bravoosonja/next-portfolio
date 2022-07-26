@@ -3,13 +3,46 @@ import NudeLayout from "../../components/layouts/NudeLayout";
 import Image from "next/image";
 import CheckItOut from "../../components/CheckItOut";
 import { liveChatImages } from "../../utils/data";
+import { motion } from "framer-motion";
+
+//animation variants
+const banner = {
+  hidden: {
+    y: "-100vh",
+  },
+  show: {
+    y: 0,
+    transition: {
+      delayChildren: 0.4,
+      duration: 1,
+      ease: [0.2, 0.65, 0.3, 0.9],
+    },
+  },
+};
+
+const title = {
+  hidden: { opacity: 0, y: "20rem" },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.3,
+      ease: [0.2, 0.65, 0.3, 0.9],
+    },
+  },
+};
 
 export default function LiveChat() {
   return (
     <div className={styles.main}>
-      <div className={styles.title}>
-        <h1>Live Chat</h1>
-      </div>
+      <motion.div
+        className={styles.title}
+        variants={banner}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.h1 variants={title}>Live Chat</motion.h1>
+      </motion.div>
 
       <div className={styles.summary}>
         <h2>

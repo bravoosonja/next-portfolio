@@ -193,13 +193,14 @@ q:before {
 
 .rightContainerItem {
   display: grid;
-  grid-template-columns: 9fr 1fr;
+  grid-template-columns: 5fr 1fr;
   align-items: center;
   justify-content: flex-start;
+  max-width: 100%;
 
   text-align: left;
   grid-auto-rows: auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .arrow {

@@ -6,7 +6,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { titleMenuItems } from "../utils/data";
 
-//animation variants
 const container = {
   hidden: { opacity: 0, y: -25 },
   show: {
@@ -20,7 +19,7 @@ const container = {
   },
 };
 
-const title = {
+const containerTitle = {
   hidden: { opacity: 0 },
   show: { opacity: 1 },
   transition: {
@@ -74,7 +73,7 @@ export default function Home() {
             <motion.div
               className="rightContainerItem"
               key={index}
-              variants={title}
+              variants={containerTitle}
               whileHover={hover}
             >
               <Link href={item.path}>
@@ -85,7 +84,7 @@ export default function Home() {
                 </a>
               </Link>
 
-              <motion.div initial="hidden" animate="show">
+              <motion.div variants={hover}>
                 <Link href={item.path}>
                   <a>
                     <Image
