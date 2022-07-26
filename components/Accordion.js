@@ -3,8 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles/components/Accordion.module.css";
-import DownArrow from "../assets/icons/down-arrow.png";
-import UpArrow from "../assets/icons/up-arrow.png";
 import { skillsItems } from "../utils/data";
 
 export default function Accordion() {
@@ -22,12 +20,19 @@ export default function Accordion() {
 
             {activeIndex === index ? (
               <Image
-                src={UpArrow}
+                src={"/assets/icons/arrow-up.svg"}
+                width="30"
+                height="30"
                 alt="up arrow"
                 onClick={() => handleSetIndex(-1)}
               />
             ) : (
-              <Image src={DownArrow} alt="down arrow" />
+              <Image
+                src={"/assets/icons/arrow-down.svg"}
+                alt="down arrow"
+                width="30"
+                height="30"
+              />
             )}
           </div>
           <AnimatePresence initial={false}>

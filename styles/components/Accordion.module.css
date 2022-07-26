@@ -8,6 +8,7 @@
 
 .item {
   padding: 1rem 0;
+  fill: var(--nude);
 }
 
 .item h3 {
@@ -15,13 +16,13 @@
   font-size: 1.5rem;
 }
 
-.keywords {
+/* .keywords {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 1.5rem 1rem;
-}
+} */
 
 .links {
   padding: 1rem;

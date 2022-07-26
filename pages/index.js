@@ -1,7 +1,43 @@
+import { useState } from "react";
 import Head from "next/head";
 import NudeLayout from "../components/layouts/NudeLayout";
 import Link from "next/link";
-import AnimatedBannerText from "../components/AnimatedBannerText";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { titleMenuItems } from "../utils/data";
+
+//animation variants
+const container = {
+  hidden: { opacity: 0, y: -25 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.4,
+      duration: 3,
+      ease: [0.2, 0.65, 0.3, 0.9],
+    },
+  },
+};
+
+const title = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+  transition: {
+    staggerChildren: 0.25,
+    duration: 1.3,
+    ease: [0.2, 0.65, 0.3, 0.9],
+  },
+};
+
+const hover = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    scale: 1.13,
+    transition: { duration: 1.3, ease: [0.2, 0.65, 0.3, 0.9] },
+  },
+};
 
 export default function Home() {
   return (
@@ -28,50 +64,42 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="rightContainer">
-          <div className="menuItem">
-            <div className="marquee">
-              <Link href="/projects">
+        <motion.div
+          className="rightContainer"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          {titleMenuItems.map((item, index) => (
+            <motion.div
+              className="rightContainerItem"
+              key={index}
+              variants={title}
+              whileHover={hover}
+            >
+              <Link href={item.path}>
                 <a>
-                  <div className="marqueeInner" aria-hidden="true">
-                    <h1>Projects</h1>
-                    <h1>Projects</h1>
-                    <h1>Projects</h1>
-                    <h1>Projects</h1>
-                  </div>
+                  <motion.div className="rightContainerTitle">
+                    <h1>{item.name}</h1>
+                  </motion.div>
                 </a>
               </Link>
-            </div>
-          </div>
-          <div className="menuItem">
-            <div className="marquee">
-              <Link href="/about">
-                <a>
-                  <div className="marqueeInner" aria-hidden="true">
-                    <h1>About</h1>
-                    <h1>About</h1>
-                    <h1>About</h1>
-                    <h1>About</h1>
-                  </div>
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className="menuItem">
-            <div className="marquee">
-              <Link href="/contact">
-                <a>
-                  <div className="marqueeInner" aria-hidden="true">
-                    <h1>Contact</h1>
-                    <h1>Contact</h1>
-                    <h1>Contact</h1>
-                    <h1>Contact</h1>
-                  </div>
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
+
+              <motion.div initial="hidden" animate="show">
+                <Link href={item.path}>
+                  <a>
+                    <Image
+                      src={"/assets/icons/arrow-right.svg"}
+                      width="70"
+                      height="70"
+                      alt="arrow right"
+                    />
+                  </a>
+                </Link>
+              </motion.div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </>
   );

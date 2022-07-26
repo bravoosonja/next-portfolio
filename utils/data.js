@@ -17,6 +17,21 @@ export const menuItems = [
   },
 ];
 
+export const titleMenuItems = [
+  {
+    name: "Projects",
+    path: "/projects",
+  },
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+];
+
 export const projectItems = [
   {
     name: "This Website",
